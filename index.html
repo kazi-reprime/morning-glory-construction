@@ -22,10 +22,12 @@
 <meta name="twitter:image" content="https://morning-glory-constructions.com/img/hero-wellness-center.jpg">
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%230a2540' stroke-width='4'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%230a2540' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Franklin:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,17 +63,13 @@
   --gold-shadow: #c6a567;
   --font-serif: 'Newsreader', serif;
   --font-sans: 'Libre Franklin', sans-serif;
-  --font-script: 'Kaushan Script', cursive;
 }
 
-/* ── BRAND MARK (script wordmark, used in header/footer/confirmation) ── */
-.brand-mark {
-  font-family: var(--font-script);
-  font-weight: 400;
-  line-height: .82;
-  color: var(--navy);
-  text-shadow: 1.5px 1.5px 0 var(--gold-shadow);
-  white-space: nowrap;
+/* ── BRAND MARK (logo wordmark image, used in header/footer/confirmation) ── */
+.logo-img {
+  display: block;
+  height: 36px;
+  width: auto;
 }
 
 html { scroll-behavior: smooth; color-scheme: light; }
@@ -110,7 +108,7 @@ input, select { font-family: var(--font-sans); }
   gap: 0;
 }
 
-.logo .brand-mark { font-size: 29px; }
+.logo .logo-img { height: 38px; }
 
 .logo-sub {
   font-family: var(--font-sans);
@@ -793,7 +791,7 @@ input, select { font-family: var(--font-sans); }
 .lead-form.hidden { display: none; }
 
 .confirmation-mark {
-  font-size: 22px;
+  height: 30px;
   margin-bottom: 18px;
 }
 
@@ -834,11 +832,15 @@ input, select { font-family: var(--font-sans); }
   justify-content: space-between;
 }
 
-.footer-logo .brand-mark {
-  font-size: 24px;
-  color: var(--muted-light);
-  text-shadow: 1.5px 1.5px 0 rgba(0,0,0,.35);
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 9px 16px;
 }
+
+.footer-logo .logo-img { height: 26px; }
 
 .footer-tagline {
   font-size: 13px;
@@ -951,7 +953,7 @@ input, select { font-family: var(--font-sans); }
 <!-- ── HEADER ── -->
 <header class="header">
   <a href="#" class="logo">
-    <span class="brand-mark">Morning Glory</span>
+    <img src="img/logo.png" alt="Morning Glory Construction" class="logo-img">
     <span class="logo-sub">Construction</span>
   </a>
   <nav class="nav" id="mainNav">
@@ -1196,7 +1198,7 @@ input, select { font-family: var(--font-sans); }
         <p class="form-footnote">Balance due in full upon sale or refinance. No obligation.</p>
       </form>
       <div class="confirmation" id="confirmation">
-        <span class="brand-mark confirmation-mark">Morning Glory</span>
+        <img src="img/logo.png" alt="Morning Glory Construction" class="logo-img confirmation-mark">
         <div class="confirmation-check">&#10003;</div>
         <h3>Request received.</h3>
         <p>Thank you. A member of our team will review your property and reach out within one business day.</p>
@@ -1207,7 +1209,7 @@ input, select { font-family: var(--font-sans); }
 
 <!-- ── FOOTER ── -->
 <footer class="footer">
-  <div class="footer-logo"><span class="brand-mark">Morning Glory</span></div>
+  <div class="footer-logo"><img src="img/logo.png" alt="Morning Glory Construction" class="logo-img"></div>
   <div class="footer-tagline">Commercial construction &amp; tenant-improvement financing · &copy; 2026</div>
 </footer>
 
