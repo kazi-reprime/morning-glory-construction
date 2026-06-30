@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Libre+Franklin:wght@400;500;600;700&family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#e7edf3;font-family:'Libre Franklin',system-ui,sans-serif}
+.dv-turn{padding:40px 44px 36px;scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 22px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#0a2540;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#0a2540}
+.dv-opts{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:11px;scroll-margin-top:16px}
+.dv-olabel{display:flex;align-items:baseline;gap:9px;font:400 12px/1.3 system-ui,sans-serif;color:rgba(10,37,64,.6)}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(10,37,64,.1);color:#0a2540;border-radius:5px;text-decoration:none}
+.dv-opt:target .dv-oid{background:#1c6dd0;color:#fff}
+.dv-card{background:#fff;border:1px solid rgba(10,37,64,.12);border-radius:10px;box-shadow:0 8px 30px rgba(10,37,64,.10);overflow:hidden;width:1240px;max-width:1240px}
+.dv-next{margin:26px 0 0;font:12px/1.6 system-ui,sans-serif;color:rgba(10,37,64,.55)}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Two full-page directions &middot; Morning Glory Investments</span></div>
+<div class="dv-opts">
+
+<!-- ============================== OPTION 1A : INSTITUTIONAL ============================== -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Institutional &mdash; editorial serif, refined, trust-forward</div>
+<div class="dv-card">
+
+<!-- header -->
+<header style="display:flex;align-items:center;justify-content:space-between;padding:20px 52px;border-bottom:1px solid #e2e8f0;background:#fff">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:32px;height:32px;border:1.5px solid #0a2540;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Newsreader',serif;font-weight:600;font-size:17px;color:#0a2540">M</div>
+<span style="font-family:'Newsreader',serif;font-weight:600;font-size:18px;letter-spacing:.01em;color:#0a2540">Morning Glory <span style="color:#1c6dd0">Investments</span></span>
+</div>
+<nav style="display:flex;align-items:center;gap:30px;font-size:14px;font-weight:500;color:#36506b">
+<a href="#how-a" style="color:#36506b;text-decoration:none">How It Works</a>
+<a href="#process-a" style="color:#36506b;text-decoration:none">Process</a>
+<a href="#results-a" style="color:#36506b;text-decoration:none">Results</a>
+<a href="#contact-a" style="display:inline-flex;align-items:center;gap:7px;background:#1c6dd0;color:#fff;font-weight:600;padding:11px 20px;border-radius:6px;text-decoration:none">Qualify Your Property</a>
+</nav>
+</header>
+
+<!-- hero -->
+<section style="background:#fff;padding:74px 52px 66px;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center">
+<div>
+<div style="font-size:12px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#1c6dd0">Commercial Tenant Improvements</div>
+<h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:55px;line-height:1.04;letter-spacing:-.015em;color:#0a2540;margin:18px 0 0">0% Interest Commercial Tenant Improvements.</h1>
+<p style="font-size:18px;line-height:1.62;color:#475569;margin:22px 0 0;max-width:520px">We handle the consulting and the construction. We finance the entire build-out over 24 to 60 months with zero interest. Fill your vacancies without draining your capital.</p>
+<div style="display:flex;align-items:center;gap:26px;margin-top:34px">
+<a href="#contact-a" style="display:inline-flex;align-items:center;gap:9px;background:#1c6dd0;color:#fff;font-weight:600;font-size:16px;padding:16px 30px;border-radius:6px;text-decoration:none">Qualify Your Property &rarr;</a>
+<a href="#how-a" style="color:#0a2540;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1.5px solid #1c6dd0;padding-bottom:3px">How financing works</a>
+</div>
+</div>
+<x-import component-from-global-scope="image-slot" from="./image-slot.js" id="heroA" shape="rounded" radius="12" placeholder="Drop a hero photo &mdash; commercial building / finished tenant space" style="width:100%;height:430px;display:block;border:1px solid #e2e8f0;background:#f4f7fb" hint-size="100%,430px"></x-import>
+</section>
+
+<!-- stat band -->
+<section style="background:#0a2540;color:#fff;display:grid;grid-template-columns:repeat(4,1fr)">
+<div style="padding:30px 36px;border-right:1px solid rgba(255,255,255,.13)"><div style="font-family:'Newsreader',serif;font-size:38px;font-weight:500;color:#fff">0%</div><div style="font-size:13px;letter-spacing:.04em;color:#9db4cc;margin-top:5px">Interest, always</div></div>
+<div style="padding:30px 36px;border-right:1px solid rgba(255,255,255,.13)"><div style="font-family:'Newsreader',serif;font-size:38px;font-weight:500;color:#fff">24&ndash;60</div><div style="font-size:13px;letter-spacing:.04em;color:#9db4cc;margin-top:5px">Month terms</div></div>
+<div style="padding:30px 36px;border-right:1px solid rgba(255,255,255,.13)"><div style="font-family:'Newsreader',serif;font-size:38px;font-weight:500;color:#fff">$0</div><div style="font-size:13px;letter-spacing:.04em;color:#9db4cc;margin-top:5px">Upfront capital</div></div>
+<div style="padding:30px 36px"><div style="font-family:'Newsreader',serif;font-size:38px;font-weight:500;color:#fff">Turnkey</div><div style="font-size:13px;letter-spacing:.04em;color:#9db4cc;margin-top:5px">Consult + build-out</div></div>
+</section>
+
+<!-- how financing works -->
+<section id="how-a" style="background:#f4f7fb;padding:78px 52px">
+<div style="font-size:12px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#1c6dd0">How our financing works</div>
+<div style="display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;margin-top:26px;align-items:center">
+<div>
+<div style="font-family:'Newsreader',serif;font-size:120px;line-height:.9;font-weight:500;color:#0a2540">0%</div>
+<h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:30px;line-height:1.12;color:#0a2540;margin:14px 0 0">Zero interest. Every dollar of the build-out, financed.</h2>
+<p style="font-size:16px;line-height:1.62;color:#475569;margin:16px 0 0;max-width:440px">You repay in equal monthly installments using your new tenant&rsquo;s rental income. No rate, no fees buried in the spread &mdash; just the cost of the work, split into predictable payments.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:14px;align-items:baseline;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 26px"><span style="font-family:'Newsreader',serif;font-size:34px;font-weight:500;color:#1c6dd0;min-width:78px">24</span><div><div style="font-weight:600;font-size:17px;color:#0a2540">24 equal monthly payments</div><div style="font-size:14px;color:#64748b;margin-top:3px">Fastest payoff &mdash; ideal for high-rent, quick-turn spaces.</div></div></div>
+<div style="display:flex;gap:14px;align-items:baseline;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 26px"><span style="font-family:'Newsreader',serif;font-size:34px;font-weight:500;color:#1c6dd0;min-width:78px">36</span><div><div style="font-weight:600;font-size:17px;color:#0a2540">36 equal monthly payments</div><div style="font-size:14px;color:#64748b;margin-top:3px">A balanced term that keeps payments comfortably below rent.</div></div></div>
+<div style="display:flex;gap:14px;align-items:baseline;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 26px"><span style="font-family:'Newsreader',serif;font-size:34px;font-weight:500;color:#1c6dd0;min-width:78px">60</span><div><div style="font-weight:600;font-size:17px;color:#0a2540">60 equal monthly payments</div><div style="font-size:14px;color:#64748b;margin-top:3px">Lowest monthly outlay &mdash; maximum breathing room on cash flow.</div></div></div>
+</div>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start;margin-top:34px;background:#0a2540;border-radius:10px;padding:22px 28px">
+<div style="width:24px;height:24px;border-radius:50%;border:1.5px solid #9db4cc;color:#9db4cc;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex:none">!</div>
+<p style="margin:0;font-size:15px;line-height:1.55;color:#cdddec"><span style="color:#fff;font-weight:600">Disclaimer.</span> Balance is due in full upon sale or refinance of the property. Terms subject to qualification and a signed construction agreement.</p>
+</div>
+</section>
+
+<!-- 3 step process -->
+<section id="process-a" style="background:#fff;padding:78px 52px">
+<div style="text-align:center"><div style="font-size:12px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#1c6dd0">The process</div><h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:38px;color:#0a2540;margin:12px 0 0">Three steps to a leased, paid-for space.</h2></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px">
+<div style="border-top:2px solid #1c6dd0;padding-top:24px"><div style="font-family:'Newsreader',serif;font-size:18px;color:#1c6dd0;font-weight:600">01</div><h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:23px;color:#0a2540;margin:10px 0 0">Consult</h3><p style="font-size:15px;line-height:1.6;color:#475569;margin:10px 0 0">We assess your vacant space and design a turnkey build-out tailored to attract the right tenant.</p></div>
+<div style="border-top:2px solid #1c6dd0;padding-top:24px"><div style="font-family:'Newsreader',serif;font-size:18px;color:#1c6dd0;font-weight:600">02</div><h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:23px;color:#0a2540;margin:10px 0 0">Build</h3><p style="font-size:15px;line-height:1.6;color:#475569;margin:10px 0 0">Our crews execute the construction rapidly &mdash; on schedule, to spec, with no surprises.</p></div>
+<div style="border-top:2px solid #1c6dd0;padding-top:24px"><div style="font-family:'Newsreader',serif;font-size:18px;color:#1c6dd0;font-weight:600">03</div><h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:23px;color:#0a2540;margin:10px 0 0">Repay</h3><p style="font-size:15px;line-height:1.6;color:#475569;margin:10px 0 0">You pay us back monthly at 0% interest, funded directly by your new tenant&rsquo;s rental income.</p></div>
+</div>
+</section>
+
+<!-- results / trust -->
+<section id="results-a" style="background:#f4f7fb;padding:78px 52px">
+<div style="font-size:12px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#1c6dd0">Results</div>
+<h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:34px;color:#0a2540;margin:12px 0 36px">White-box shells, turned into premium leased spaces.</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+<div><div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#64748b;margin-bottom:8px">Before</div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="beforeA" shape="rounded" radius="10" placeholder="Drop a before photo (white-box shell)" style="width:100%;height:300px;display:block;border:1px solid #e2e8f0;background:#fff" hint-size="100%,300px"></x-import></div>
+<div><div style="font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1c6dd0;margin-bottom:8px">After</div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="afterA" shape="rounded" radius="10" placeholder="Drop an after photo (finished space)" style="width:100%;height:300px;display:block;border:1px solid #e2e8f0;background:#fff" hint-size="100%,300px"></x-import></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px">
+<div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:28px"><div style="font-family:'Newsreader',serif;font-size:40px;line-height:0;color:#cdddec">&ldquo;</div><p style="font-family:'Newsreader',serif;font-style:italic;font-size:19px;line-height:1.5;color:#0a2540;margin:8px 0 0">Client testimonial placeholder &mdash; a sentence on filling a long-vacant suite without touching reserves.</p><div style="margin-top:18px;font-size:14px;color:#64748b">Name, Title &mdash; Property / Portfolio</div></div>
+<div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:28px"><div style="font-family:'Newsreader',serif;font-size:40px;line-height:0;color:#cdddec">&ldquo;</div><p style="font-family:'Newsreader',serif;font-style:italic;font-size:19px;line-height:1.5;color:#0a2540;margin:8px 0 0">Client testimonial placeholder &mdash; a sentence on speed of build-out and the 0% terms.</p><div style="margin-top:18px;font-size:14px;color:#64748b">Name, Title &mdash; Property / Portfolio</div></div>
+</div>
+</section>
+
+<!-- contact -->
+<section id="contact-a" style="background:#0a2540;padding:78px 52px">
+<div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start">
+<div>
+<div style="font-size:12px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:#6fa8dc">Qualify your property</div>
+<h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.08;color:#fff;margin:14px 0 0">Tell us about your space.</h2>
+<p style="font-size:16px;line-height:1.62;color:#9db4cc;margin:18px 0 0;max-width:380px">Send a few details and we&rsquo;ll come back with whether your property qualifies for a 0%, fully-financed build-out.</p>
+<div style="margin-top:28px;font-size:15px;color:#cdddec;line-height:1.9"><div>(555) 010&ndash;0100</div><div>invest@morningglory.com</div></div>
+</div>
+<div style="background:#fff;border-radius:12px;padding:32px">
+<sc-if value="{{ formOpenA }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ submitA }}">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<div><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Name</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540"></div>
+<div><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Phone</label><input required type="tel" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540"></div>
+<div style="grid-column:1 / -1"><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Email</label><input required type="email" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540"></div>
+<div style="grid-column:1 / -1"><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Property Address</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540"></div>
+<div><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Est. Square Footage</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540"></div>
+<div><label style="display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#36506b;margin-bottom:7px">Current Property Status</label><select required style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:6px;font-size:15px;font-family:'Libre Franklin';color:#0a2540;background:#fff"><option value="">Select&hellip;</option><option>Vacant</option><option>Partially Leased</option><option>Needs Remodel</option></select></div>
+</div>
+<button type="submit" style="width:100%;margin-top:22px;background:#1c6dd0;color:#fff;font-family:'Libre Franklin';font-weight:600;font-size:16px;padding:16px;border:none;border-radius:6px;cursor:pointer">Qualify Your Property &rarr;</button>
+<p style="font-size:12px;color:#94a3b8;text-align:center;margin:14px 0 0">Balance due in full upon sale or refinance. No obligation.</p>
+</form>
+</sc-if>
+<sc-if value="{{ submittedA }}" hint-placeholder-val="{{ false }}">
+<div style="text-align:center;padding:34px 12px">
+<div style="width:60px;height:60px;border-radius:50%;background:#e8f1fb;color:#1c6dd0;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto">&checkmark;</div>
+<h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:26px;color:#0a2540;margin:20px 0 0">Request received.</h3>
+<p style="font-size:16px;line-height:1.6;color:#475569;margin:12px auto 0;max-width:340px">Thank you. A member of our team will review your property and reach out within one business day.</p>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer style="background:#06192e;padding:30px 52px;display:flex;align-items:center;justify-content:space-between">
+<span style="font-family:'Newsreader',serif;font-weight:600;font-size:15px;color:#cdddec">Morning Glory Investments</span>
+<span style="font-size:13px;color:#6f8aa6">Commercial construction &amp; tenant-improvement financing &middot; &copy; 2026</span>
+</footer>
+
+</div>
+</div>
+
+<!-- ============================== OPTION 1B : ARCHITECTURAL BOLD ============================== -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Architectural Bold &mdash; dark hero, oversized type, blocky</div>
+<div class="dv-card">
+
+<!-- header -->
+<header style="display:flex;align-items:center;justify-content:space-between;padding:20px 52px;background:#081225">
+<div style="display:flex;align-items:center;gap:11px">
+<div style="width:30px;height:30px;background:#2563eb;display:flex;align-items:center;justify-content:center;font-family:'Archivo';font-weight:800;font-size:16px;color:#fff">M</div>
+<span style="font-family:'Archivo';font-weight:700;font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:#fff">Morning Glory</span>
+</div>
+<nav style="display:flex;align-items:center;gap:28px;font-family:'IBM Plex Sans';font-size:14px;font-weight:500;color:#9fb2c9">
+<a href="#how-b" style="color:#9fb2c9;text-decoration:none">How It Works</a>
+<a href="#process-b" style="color:#9fb2c9;text-decoration:none">Process</a>
+<a href="#results-b" style="color:#9fb2c9;text-decoration:none">Results</a>
+<a href="#contact-b" style="display:inline-flex;align-items:center;background:#2563eb;color:#fff;font-weight:600;padding:11px 20px;border-radius:4px;text-decoration:none">Qualify Your Property</a>
+</nav>
+</header>
+
+<!-- hero -->
+<section style="background:#081225;background-image:radial-gradient(circle at 80% -10%,rgba(37,99,235,.32),transparent 55%);padding:80px 52px 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center">
+<div>
+<div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#5b9bf5">Commercial Tenant Improvements</div>
+<h1 style="font-family:'Archivo';font-weight:900;font-size:62px;line-height:.98;letter-spacing:-.025em;text-transform:uppercase;color:#fff;margin:20px 0 0"><span style="color:#3b82f6">0% Interest</span> Commercial Tenant Improvements.</h1>
+<p style="font-family:'IBM Plex Sans';font-size:18px;line-height:1.6;color:#aebfd3;margin:24px 0 0;max-width:530px">We handle the consulting and the construction. We finance the entire build-out over 24 to 60 months with zero interest. Fill your vacancies without draining your capital.</p>
+<div style="display:flex;align-items:center;gap:24px;margin-top:36px">
+<a href="#contact-b" style="display:inline-flex;align-items:center;gap:9px;background:#2563eb;color:#fff;font-family:'IBM Plex Sans';font-weight:600;font-size:16px;padding:17px 32px;border-radius:4px;text-decoration:none">Qualify Your Property &rarr;</a>
+<a href="#how-b" style="color:#fff;font-family:'IBM Plex Sans';font-weight:600;font-size:15px;text-decoration:none;opacity:.85">How financing works &darr;</a>
+</div>
+</div>
+<x-import component-from-global-scope="image-slot" from="./image-slot.js" id="heroB" shape="rect" placeholder="Drop a hero photo &mdash; commercial building" style="width:100%;height:440px;display:block;border:1px solid rgba(255,255,255,.14);background:#0e1d33" hint-size="100%,440px"></x-import>
+</section>
+
+<!-- stat band -->
+<section style="background:#2563eb;display:grid;grid-template-columns:repeat(4,1fr)">
+<div style="padding:32px 36px;border-right:1px solid rgba(255,255,255,.2)"><div style="font-family:'Archivo';font-weight:900;font-size:44px;color:#fff;line-height:1">0%</div><div style="font-family:'IBM Plex Sans';font-size:13px;color:#cfe0ff;margin-top:4px">Interest, always</div></div>
+<div style="padding:32px 36px;border-right:1px solid rgba(255,255,255,.2)"><div style="font-family:'Archivo';font-weight:900;font-size:44px;color:#fff;line-height:1">24&ndash;60</div><div style="font-family:'IBM Plex Sans';font-size:13px;color:#cfe0ff;margin-top:4px">Month terms</div></div>
+<div style="padding:32px 36px;border-right:1px solid rgba(255,255,255,.2)"><div style="font-family:'Archivo';font-weight:900;font-size:44px;color:#fff;line-height:1">$0</div><div style="font-family:'IBM Plex Sans';font-size:13px;color:#cfe0ff;margin-top:4px">Upfront capital</div></div>
+<div style="padding:32px 36px"><div style="font-family:'Archivo';font-weight:900;font-size:44px;color:#fff;line-height:1">100%</div><div style="font-family:'IBM Plex Sans';font-size:13px;color:#cfe0ff;margin-top:4px">Turnkey build-out</div></div>
+</section>
+
+<!-- how financing works -->
+<section id="how-b" style="background:#fff;padding:80px 52px">
+<div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2563eb">How our financing works</div>
+<div style="display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;margin-top:24px;align-items:center">
+<div>
+<div style="font-family:'Archivo';font-weight:900;font-size:150px;line-height:.82;letter-spacing:-.04em;color:#081225">0%</div>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:30px;line-height:1.08;text-transform:uppercase;letter-spacing:-.01em;color:#081225;margin:18px 0 0">Zero interest. The whole build-out, financed.</h2>
+<p style="font-family:'IBM Plex Sans';font-size:16px;line-height:1.6;color:#475569;margin:16px 0 0;max-width:430px">Repay in equal monthly installments from your new tenant&rsquo;s rent. No rate. No fees in the spread. Just the cost of the work, split into predictable payments.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;align-items:center;gap:20px;background:#f3f6fb;border-left:4px solid #2563eb;padding:24px 28px"><span style="font-family:'Archivo';font-weight:900;font-size:46px;color:#2563eb;min-width:96px;line-height:1">24</span><div><div style="font-family:'IBM Plex Sans';font-weight:600;font-size:17px;color:#081225">24 equal monthly payments</div><div style="font-family:'IBM Plex Sans';font-size:14px;color:#64748b;margin-top:3px">Fastest payoff &mdash; for high-rent, quick-turn spaces.</div></div></div>
+<div style="display:flex;align-items:center;gap:20px;background:#f3f6fb;border-left:4px solid #2563eb;padding:24px 28px"><span style="font-family:'Archivo';font-weight:900;font-size:46px;color:#2563eb;min-width:96px;line-height:1">36</span><div><div style="font-family:'IBM Plex Sans';font-weight:600;font-size:17px;color:#081225">36 equal monthly payments</div><div style="font-family:'IBM Plex Sans';font-size:14px;color:#64748b;margin-top:3px">Balanced &mdash; payments stay well below rent.</div></div></div>
+<div style="display:flex;align-items:center;gap:20px;background:#f3f6fb;border-left:4px solid #2563eb;padding:24px 28px"><span style="font-family:'Archivo';font-weight:900;font-size:46px;color:#2563eb;min-width:96px;line-height:1">60</span><div><div style="font-family:'IBM Plex Sans';font-weight:600;font-size:17px;color:#081225">60 equal monthly payments</div><div style="font-family:'IBM Plex Sans';font-size:14px;color:#64748b;margin-top:3px">Lowest monthly outlay &mdash; maximum cash-flow room.</div></div></div>
+</div>
+</div>
+<div style="display:flex;gap:14px;align-items:center;margin-top:34px;border:2px solid #081225;border-radius:4px;padding:20px 26px">
+<div style="font-family:'Archivo';font-weight:900;font-size:22px;color:#2563eb;flex:none">!</div>
+<p style="margin:0;font-family:'IBM Plex Sans';font-size:15px;line-height:1.55;color:#334155"><span style="color:#081225;font-weight:700">Disclaimer.</span> Balance is due in full upon sale or refinance of the property. Terms subject to qualification and a signed construction agreement.</p>
+</div>
+</section>
+
+<!-- process -->
+<section id="process-b" style="background:#081225;padding:80px 52px">
+<div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#5b9bf5">The process</div>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:40px;text-transform:uppercase;letter-spacing:-.01em;color:#fff;margin:12px 0 48px">Three steps. One leased, paid-for space.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+<div style="background:#0e1d33;padding:30px;border-top:3px solid #2563eb"><div style="font-family:'Archivo';font-weight:900;font-size:48px;color:#2563eb;line-height:1">01</div><h3 style="font-family:'Archivo';font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;margin:14px 0 0">Consult</h3><p style="font-family:'IBM Plex Sans';font-size:15px;line-height:1.6;color:#9fb2c9;margin:10px 0 0">We assess your vacant space and design a turnkey build-out to attract the right tenant.</p></div>
+<div style="background:#0e1d33;padding:30px;border-top:3px solid #2563eb"><div style="font-family:'Archivo';font-weight:900;font-size:48px;color:#2563eb;line-height:1">02</div><h3 style="font-family:'Archivo';font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;margin:14px 0 0">Build</h3><p style="font-family:'IBM Plex Sans';font-size:15px;line-height:1.6;color:#9fb2c9;margin:10px 0 0">Our crews execute the construction rapidly &mdash; on schedule, to spec, no surprises.</p></div>
+<div style="background:#0e1d33;padding:30px;border-top:3px solid #2563eb"><div style="font-family:'Archivo';font-weight:900;font-size:48px;color:#2563eb;line-height:1">03</div><h3 style="font-family:'Archivo';font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;margin:14px 0 0">Repay</h3><p style="font-family:'IBM Plex Sans';font-size:15px;line-height:1.6;color:#9fb2c9;margin:10px 0 0">You pay us back monthly at 0% interest, funded by your new tenant&rsquo;s rental income.</p></div>
+</div>
+</section>
+
+<!-- results -->
+<section id="results-b" style="background:#fff;padding:80px 52px">
+<div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2563eb">Results</div>
+<h2 style="font-family:'Archivo';font-weight:800;font-size:36px;text-transform:uppercase;letter-spacing:-.01em;color:#081225;margin:12px 0 36px">White-box shells &rarr; premium leased spaces.</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+<div><div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#64748b;margin-bottom:8px">Before</div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="beforeB" shape="rect" placeholder="Drop a before photo" style="width:100%;height:300px;display:block;border:1px solid #d8e0ea;background:#f3f6fb" hint-size="100%,300px"></x-import></div>
+<div><div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#2563eb;margin-bottom:8px">After</div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="afterB" shape="rect" placeholder="Drop an after photo" style="width:100%;height:300px;display:block;border:1px solid #d8e0ea;background:#f3f6fb" hint-size="100%,300px"></x-import></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px">
+<div style="background:#081225;padding:28px"><div style="font-family:'Archivo';font-weight:900;font-size:40px;color:#2563eb;line-height:0;height:20px">&ldquo;</div><p style="font-family:'IBM Plex Sans';font-size:18px;line-height:1.55;color:#fff;margin:14px 0 0">Client testimonial placeholder &mdash; a sentence on filling a long-vacant suite without touching reserves.</p><div style="margin-top:16px;font-family:'IBM Plex Sans';font-size:14px;color:#9fb2c9">Name, Title &mdash; Property / Portfolio</div></div>
+<div style="background:#081225;padding:28px"><div style="font-family:'Archivo';font-weight:900;font-size:40px;color:#2563eb;line-height:0;height:20px">&ldquo;</div><p style="font-family:'IBM Plex Sans';font-size:18px;line-height:1.55;color:#fff;margin:14px 0 0">Client testimonial placeholder &mdash; a sentence on speed of build-out and the 0% terms.</p><div style="margin-top:16px;font-family:'IBM Plex Sans';font-size:14px;color:#9fb2c9">Name, Title &mdash; Property / Portfolio</div></div>
+</div>
+</section>
+
+<!-- contact -->
+<section id="contact-b" style="background:#f3f6fb;padding:80px 52px">
+<div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start">
+<div>
+<div style="font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2563eb">Qualify your property</div>
+<h2 style="font-family:'Archivo';font-weight:900;font-size:46px;line-height:.98;text-transform:uppercase;letter-spacing:-.02em;color:#081225;margin:14px 0 0">Tell us about your space.</h2>
+<p style="font-family:'IBM Plex Sans';font-size:16px;line-height:1.6;color:#475569;margin:18px 0 0;max-width:380px">Send a few details and we&rsquo;ll come back with whether your property qualifies for a 0%, fully-financed build-out.</p>
+<div style="margin-top:26px;font-family:'IBM Plex Sans';font-size:15px;color:#334155;line-height:1.9"><div>(555) 010&ndash;0100</div><div>invest@morningglory.com</div></div>
+</div>
+<div style="background:#fff;border:1px solid #d8e0ea;padding:32px">
+<sc-if value="{{ formOpenB }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ submitB }}">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<div><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Name</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225"></div>
+<div><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Phone</label><input required type="tel" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225"></div>
+<div style="grid-column:1 / -1"><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Email</label><input required type="email" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225"></div>
+<div style="grid-column:1 / -1"><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Property Address</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225"></div>
+<div><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Est. Square Footage</label><input required type="text" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225"></div>
+<div><label style="display:block;font-family:'IBM Plex Sans';font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#334155;margin-bottom:7px">Current Property Status</label><select required style="width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #cfd9e4;border-radius:4px;font-size:15px;font-family:'IBM Plex Sans';color:#081225;background:#fff"><option value="">Select&hellip;</option><option>Vacant</option><option>Partially Leased</option><option>Needs Remodel</option></select></div>
+</div>
+<button type="submit" style="width:100%;margin-top:22px;background:#2563eb;color:#fff;font-family:'IBM Plex Sans';font-weight:600;font-size:16px;padding:16px;border:none;border-radius:4px;cursor:pointer">Qualify Your Property &rarr;</button>
+<p style="font-family:'IBM Plex Sans';font-size:12px;color:#94a3b8;text-align:center;margin:14px 0 0">Balance due in full upon sale or refinance. No obligation.</p>
+</form>
+</sc-if>
+<sc-if value="{{ submittedB }}" hint-placeholder-val="{{ false }}">
+<div style="text-align:center;padding:34px 12px">
+<div style="width:60px;height:60px;border-radius:50%;background:#e8f1fb;color:#2563eb;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto">&checkmark;</div>
+<h3 style="font-family:'Archivo';font-weight:800;font-size:26px;text-transform:uppercase;color:#081225;margin:20px 0 0">Request received.</h3>
+<p style="font-family:'IBM Plex Sans';font-size:16px;line-height:1.6;color:#475569;margin:12px auto 0;max-width:340px">Thank you. A member of our team will review your property and reach out within one business day.</p>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer style="background:#081225;padding:30px 52px;display:flex;align-items:center;justify-content:space-between">
+<span style="font-family:'Archivo';font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:#fff">Morning Glory Investments</span>
+<span style="font-family:'IBM Plex Sans';font-size:13px;color:#6f8aa6">Commercial construction &amp; tenant-improvement financing &middot; &copy; 2026</span>
+</footer>
+
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: &ldquo;merge the best of <a class="dv-oid" href="#1a">1a</a> and <a class="dv-oid" href="#1b">1b</a>&rdquo; &middot; &ldquo;make <a class="dv-oid" href="#1b">1b</a> a single scroll page on its own&rdquo; &middot; &ldquo;add a financing calculator to <a class="dv-oid" href="#1a">1a</a>&rdquo; &middot; &ldquo;new direction: warmer, less corporate&rdquo;</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { a: false, b: false };
+  submit(k) {
+    return (e) => {
+      if (e && e.preventDefault) e.preventDefault();
+      this.setState({ [k]: true });
+    };
+  }
+  renderVals() {
+    return {
+      submitA: this.submit('a'),
+      submitB: this.submit('b'),
+      submittedA: this.state.a,
+      formOpenA: !this.state.a,
+      submittedB: this.state.b,
+      formOpenB: !this.state.b,
+    };
+  }
+}
+</script>
+</body>
+</html>
