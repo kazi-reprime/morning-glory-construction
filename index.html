@@ -1248,9 +1248,45 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
 
   if (!valid) return;
 
-  // Show confirmation
-  this.classList.add('hidden');
-  document.getElementById('confirmation').classList.add('active');
+  var form = this;
+  var submitBtn = form.querySelector('.form-submit');
+  var payload = {
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    email: form.email.value.trim(),
+    address: form.address.value.trim(),
+    sqft: form.sqft.value.trim(),
+    status: form.status.value,
+  };
+
+  var errorEl = form.querySelector('.form-error');
+  if (errorEl) errorEl.remove();
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting…';
+
+  fetch('/api/lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  })
+    .then(function(res) {
+      if (!res.ok) throw new Error('Request failed');
+      form.classList.add('hidden');
+      document.getElementById('confirmation').classList.add('active');
+    })
+    .catch(function() {
+      var p = document.createElement('p');
+      p.className = 'form-error';
+      p.style.color = '#c0392b';
+      p.style.fontSize = '13px';
+      p.style.marginTop = '10px';
+      p.textContent = "Something went wrong sending your request. Please call us at (574) 207-4857 or try again.";
+      form.appendChild(p);
+    })
+    .finally(function() {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Qualify Your Property';
+    });
 });
 </script>
 </body>
