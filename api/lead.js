@@ -1,4 +1,4 @@
-const NOTIFY_TO = 'billing@morning-glory-construction.com';
+const NOTIFY_TO = process.env.LEAD_NOTIFY_EMAIL || 'g@reprime.com';
 const FROM_ADDRESS = 'Morning Glory Construction <onboarding@resend.dev>';
 
 const STATUS_LABELS = {
@@ -49,8 +49,10 @@ module.exports = async (req, res) => {
       from: FROM_ADDRESS,
       to: NOTIFY_TO,
       reply_to: email,
-      subject: `New lead: ${name} — ${address}`,
+      subject: `[Morning Glory Construction] New website lead: ${name}`,
       text: [
+        'You have received a new lead from the Morning Glory Construction website.',
+        '',
         'New "Qualify Your Property" submission from morning-glory-constructions.com',
         '',
         `Name: ${name}`,

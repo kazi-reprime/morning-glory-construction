@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-const NOTIFY_TO = 'billing@morning-glory-construction.com';
+const NOTIFY_TO = process.env.LEAD_NOTIFY_EMAIL || 'g@reprime.com';
 const FROM_ADDRESS = 'Morning Glory Construction <onboarding@resend.dev>';
 
 module.exports.config = {
@@ -51,6 +51,8 @@ async function sendEmail(apiKey, payload) {
 function formatCallEmail(event) {
   const obj = (event.data && event.data.object) || {};
   const lines = [
+    'You have received a new phone call/voicemail from the Morning Glory Construction line.',
+    '',
     `Quo event: ${event.type}`,
     '',
     `From: ${obj.from || 'unknown'}`,
@@ -71,6 +73,8 @@ function formatCallEmail(event) {
 function formatMessageEmail(event) {
   const obj = (event.data && event.data.object) || {};
   return [
+    'You have received a new text message on the Morning Glory Construction line.',
+    '',
     `Quo event: ${event.type}`,
     '',
     `From: ${obj.from || 'unknown'}`,
@@ -121,7 +125,7 @@ module.exports = async (req, res) => {
     await sendEmail(resendApiKey, {
       from: FROM_ADDRESS,
       to: NOTIFY_TO,
-      subject: `${subject} — Morning Glory Construction`,
+      subject: `[Morning Glory Construction] ${subject}`,
       text,
     });
   } catch (err) {
